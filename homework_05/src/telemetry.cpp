@@ -1,9 +1,9 @@
-#include "telemetry.hpp"
+#include <telemetry.hpp>
 #include <algorithm>
-#include <cstring>
+//#include <cstring>
 #include <fstream>
 #include <iostream>
-#include <limits> 
+//#include <limits> 
 #include <sstream>
 
 bool parse_frame(const std::string& line, Frame& frame) {
@@ -38,11 +38,17 @@ int read_frames(const char* path, Frame frames[], int max_frames) {
 
     while (std::getline(input, line) && frame_count < max_frames) {
         ++line_number;
-        if (line.empty() || line[0] == '#' || line[0] == '\n') {
+        size_t start = line.find_first_not_of(" \t\r\n");
+        if (start == std::string::npos) {
             continue;
         }
 
-        if (!parse_frame(line, frames[frame_count])) {
+        std::string trimmed = line.substr(start);
+        if (trimmed[0] == '#') {
+            continue;
+        }
+
+        if (!parse_frame(trimmed, frames[frame_count])) {
             std::cerr << "error: invalid frame at line " << line_number << '\n';
             return -1;
         }

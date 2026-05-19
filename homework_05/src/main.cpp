@@ -1,9 +1,9 @@
-#include "telemetry.hpp"
+#include <telemetry.hpp>
 
 #include <iostream>
 
 int main(int argc, char** argv) {
-    // The executable expects exactly one telemetry log path.
+   
     if (argc != 2) {
         std::cerr << "usage: telemetry_check <input_path>\n";
         return 1;

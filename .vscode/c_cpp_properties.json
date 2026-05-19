@@ -10,18 +10,22 @@
         ]
     },
     "configurations": [
-    {
-      "name": "Dev Container",
-      "includePath": [
-        "${workspaceFolder}/**"
-      ],
-      "defines": [],
-      "compilerPath": "/usr/bin/g++",
-      "cStandard": "c17",
-      "cppStandard": "c++20",
-      "intelliSenseMode": "linux-gcc-x64",
-      "intelliSenseEngine": "default"
-    }
+        {
+            "name": "Dev Container",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/lib"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "${default}",
+            "intelliSenseEngine": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
     ],
     "version": 4,
     "enableConfigurationSquiggles": true

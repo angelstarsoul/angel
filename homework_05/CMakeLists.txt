@@ -12,13 +12,13 @@ target_include_directories(telemetry PUBLIC
 target_compile_features(telemetry PUBLIC cxx_std_20)
 
 
-add_executable(telemetry_check
+add_executable(homework_05
     src/main.cpp
 )
 
-target_link_libraries(telemetry_check PRIVATE telemetry)
+target_link_libraries(homework_05 PRIVATE telemetry)
 
 
-set_target_properties(telemetry_check PROPERTIES
-    OUTPUT_NAME "telemetry_check"
+set_target_properties(homework_05 PROPERTIES
+    OUTPUT_NAME "homework_05"
 )

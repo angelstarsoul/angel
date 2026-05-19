@@ -28,7 +28,8 @@
         "josetr.cmake-language-support-vscode",
         "cheshirekow.cmake-format",
         "ms-vscode.cpptools",
-        "llvm-vs-code-extensions.vscode-clangd"
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-azuretools.vscode-docker"
       ],
       "settings": {
         "clangd.path": "/usr/bin/clangd",
