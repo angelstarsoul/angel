@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-
+# Бібліотека
 add_library(ballistics STATIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/ballistics.cpp
 )
@@ -11,7 +11,7 @@ target_include_directories(ballistics PUBLIC
 
 target_compile_features(ballistics PUBLIC cxx_std_20)
 
-
+# Консольна програма
 add_executable(ballistics_cli
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 )
@@ -28,8 +28,8 @@ if(NOT CMAKE_CROSSCOMPILING)
     )
     FetchContent_MakeAvailable(googletest)
 
-
-
+    include(GoogleTest)       
+    
     add_executable(ballistics_tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/ballistics_tests.cpp
     )
