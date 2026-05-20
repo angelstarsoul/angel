@@ -10,3 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_subdirectory(homework_04)
 add_subdirectory(homework_05)
 add_subdirectory(homework_06)
+add_subdirectory(homework_07)
+
+
+
