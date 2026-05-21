@@ -4,10 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-// Debugging exercise notes:
-// this file intentionally contains four runtime defects.
-// The defects are related to malformed input shape, invalid numeric values,
-// unsafe time deltas, and empty logs. Exact locations are not marked on purpose.
+
 
 const int EXPECTED_FIELD_COUNT = 7;
 const int MAX_LINE_LENGTH = 256;
