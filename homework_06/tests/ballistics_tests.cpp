@@ -31,6 +31,7 @@ TEST(Ballistics, RejectsZeroAltitude)
 {
   BallisticsInput input{.drone_z = 0.0, .ammo_name = "VOG-17"};
 
+  
   DropSolution sol = compute_drop_solution(input);
   EXPECT_FALSE(sol.valid);
 }

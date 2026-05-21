@@ -13,6 +13,7 @@ struct BallisticsInput {
   std::string ammo_name;
 };
 
+
 struct DropSolution {
   double fire_x = 0.0; 
   double fire_y = 0.0;

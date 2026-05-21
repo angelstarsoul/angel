@@ -35,6 +35,7 @@ if(NOT CMAKE_CROSSCOMPILING)
     )
 
     target_link_libraries(ballistics_tests PRIVATE ballistics GTest::gtest_main)
-
+ 
+    
     gtest_discover_tests(ballistics_tests)
 endif()

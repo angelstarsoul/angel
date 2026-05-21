@@ -15,6 +15,7 @@ const std::map<std::string, AmmoParams> ammo_db = {
  
 };
 
+
 }  
 
 DropSolution compute_drop_solution(const BallisticsInput& input)

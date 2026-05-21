@@ -14,6 +14,7 @@ int main(int argc, char** argv)
   std::cout << "=== Ballistics Calculator ===\n";
   std::cout << "Input file: " << argv[1] << "\n";
 
+  
 
   BallisticsInput input{.drone_x = 100.0,
                         .drone_y = 100.0,
