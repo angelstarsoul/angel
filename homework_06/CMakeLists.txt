@@ -9,7 +9,7 @@ add_executable(ballistics_cli src/main.cpp)
 
 target_link_libraries(ballistics_cli PRIVATE ballistics)
 
-# ====================== GOOGLE TESTS ======================
+
 if(NOT CMAKE_CROSSCOMPILING)
     include(FetchContent)
     FetchContent_Declare(

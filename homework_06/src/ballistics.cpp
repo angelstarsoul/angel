@@ -48,7 +48,7 @@ DropSolution compute_drop_solution(const BallisticsInput& input)
     return sol;
   }
 
-  // Покращена балістика
+
   double t_fall = std::sqrt(2.0 * input.drone_z / 9.81) * (1.0 + ammo.lift * 0.35);
   double horizontal_offset = input.attack_speed * t_fall * 0.78;
 
