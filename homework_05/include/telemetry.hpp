@@ -1,7 +1,6 @@
 #pragma once
 
 
-
 const int MAX_TELEMETRY_FRAMES = 128;
 
 
